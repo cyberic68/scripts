@@ -31,11 +31,11 @@ printf "\ec"
 echo -e "\nMrChromebox Firmware Utility Script starting up"
 
 #check for cmd line param, expired CrOS certs
-if ! curl -sLo /dev/null https://mrchromebox.tech/index.html || [[ "$1" = "-k" ]]; then
-	export CURL="curl -k"
-else
-	export CURL="curl"
-fi
+#if ! curl -sLo /dev/null https://mrchromebox.tech/index.html || [[ "$1" = "-k" ]]; then
+export CURL="curl -k"
+#else
+#	export CURL="curl"
+#fi
 
 #get support scripts
 echo -e "\nDownloading supporting files..."

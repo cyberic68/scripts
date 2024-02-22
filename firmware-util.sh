@@ -12,7 +12,7 @@
 #
 
 #where the stuff is
-script_url="https://github.com/cyberic68/scripts/blob/main/"
+script_url="https://raw.githubusercontent.com/cyberic68/scripts/master/"
 
 #ensure output of system tools in en-us for parsing
 export LC_ALL=C
@@ -34,7 +34,7 @@ echo -e "\nMrChromebox Firmware Utility Script starting up"
 #if ! curl -sLo /dev/null https://mrchromebox.tech/index.html || [[ "$1" = "-k" ]]; then
 export CURL="curl -k"
 #else
-#	export CURL="curl"
+#export CURL="curl"
 #fi
 
 #get support scripts
